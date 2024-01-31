@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>celebration page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="celebration.css">
+</head>
+<body>
+    <section class="hero">
+        <div class="container">
+            <div class="img-wrapper">
+                <img class="trophy" src="./images/trophy.png" alt="trophy">
+            </div>
+            <div class="text-wrapper">
+                <h1>HURRAY!</h1>
+                <p>YOU WON THE GAME</p>
+
+                <a href="index.html">PLAY AGAIN</a>
+            </div>
+        </div>
+    </section>
+    <section class="popup-section">
+        <div class="popup-wrapper">
+            <div class="rules-popup" id="popup-div">
+                <h3 class="rules-heading">Game Rules</h3>
+                <ul class="rules-list">
+                    <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                    <li>Agree ahead of time whether you'll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+                    <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                    <li>If both players lay down the same hand, each player lays down another hand</li>
+                </ul>
+                <div class="close-popup-btn" id="popup-close">X</div>
+            </div>
+            <div class="bottom-btn-wrapper">
+                <div class="bottom-btn rules-btn" id="rules-btn">RULES</div>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    //popup logic
+const popupbtn = document.getElementById("popup-close");
+const popup = document.getElementById("popup-div");
+const rulesBtn = document.getElementById("rules-btn");
+
+popupbtn.addEventListener("click", closePopup);
+
+function closePopup() {
+  popup.style.display = "none";
+}
+
+rulesBtn.addEventListener("click",showPopup);
+
+function showPopup() {
+    popup.style.display = "block";
+}
+</script>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock paper sicssor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <section class="home-section">
+        <div class="container">
+            <div class="score-wrapper">
+                <h1 class="heading-1">ROCK<br> PAPER<br>SCISSORS</h1>
+                <div class="score-boxes-wrapper">
+                    <div class="score-box">
+                        <h3 class="score-heading">YOUR SCORE</h3>
+                        <h1 class="score your-score" id="myscore">0</h1>
+                    </div>
+                    <div class="score-box">
+                        <h3 class="score-heading">COMPUTER SCORE</h3>
+                        <h1 class="score com-score" id="pcscore">0</h1>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="triangle-wrapper" id="choice-display">
+                <div class="rock hand-option" id="rock-id">
+                    <img src="./images/rock.png" alt="rock image">
+                </div>
+                <div class="paper hand-option" id="paper-id">
+                    <img src="./images/papper.png" alt="rock image">
+                </div>
+                <div class="scissor hand-option" id="scissor-id">
+                    <img src="./images/scissor.png" alt="rock image">
+                </div>
+                <div class="triangle-div"> </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="result-wrapper" id="result-display">
+                <div class="pick-wrapper" >
+                    <h4>YOU PICKED</h4>
+                    <div class="picked-item" id="your-rock">
+                        <div><img src="./images/rock.png" alt="rock image"></div>
+                    </div>
+                    <div class="picked-item" id="your-paper">
+                        <div><img src="./images/papper.png" alt="rock image"></div>
+                    </div>
+                    <div class="picked-item" id="your-scissor">
+                        <div><img src="./images/scissor.png" alt="rock image"></div>
+                    </div>
+                    <div class="winning-circle" id="green-circle-your"></div>
+                </div>
+                <div class="result-text-wrapper">
+                    <h1 class="result-main-heading" id="result-h">You win</h1>
+                    <h2 class="result-sub-heading" id="result-s">Against Pc</h2>
+                    <button id="reset-btn">Play again</button>
+                </div>
+                <div class="pick-wrapper">
+                    <h4>PC PICKED</h4>
+                    <div class="picked-item" id="pc-rock">
+                        <div><img src="./images/rock.png" alt="rock image"></div>
+                    </div>
+                    <div class="picked-item" id="pc-paper">
+                        <div><img src="./images/papper.png" alt="rock image"></div>
+                    </div>
+                    <div class="picked-item" id="pc-scissor">
+                        <div><img src="./images/scissor.png" alt="rock image"></div>
+                    </div>
+                    <div class="winning-circle" id="green-circle-pc"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="popup-section">
+        <div class="popup-wrapper">
+            <div class="rules-popup" id="popup-div">
+                <h3 class="rules-heading">Game Rules</h3>
+                <ul class="rules-list">
+                    <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                    <li>Agree ahead of time whether you'll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+                    <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                    <li>If both players lay down the same hand, each player lays down another hand</li>
+                </ul>
+                <div class="close-popup-btn" id="popup-close">X</div>
+            </div>
+            <div class="bottom-btn-wrapper">
+                <div class="bottom-btn rules-btn" id="rules-btn">RULES</div>
+                <a class="bottom-btn" id="next-btn" href="celebration.html" >NEXT</a>
+            </div>
+        </div>
+    </section>
+
+    
+</body>
+<script src="script.js"></script>
+</html>
