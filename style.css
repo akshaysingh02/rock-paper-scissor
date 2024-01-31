@@ -281,6 +281,7 @@ a{
     justify-content: center;
     align-items: center;
     z-index: 2;
+    position: relative;
 }
 
 #result-display{
@@ -334,11 +335,11 @@ a{
       opacity: 0;
     }
     50% {
-      transform: scale(2);
+      transform: scale(1.5);
       opacity: 1;
     }
     100% {
-      transform: scale(3);
+      transform: scale(2);
       opacity: 0;
     }
   }
